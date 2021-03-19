@@ -3,6 +3,27 @@ Simple command bus for web and CLI applications
 
 [![Repo](https://jitpack.io/v/ummo93/SpringCommandBus.svg)](https://jitpack.io/#ummo93/SpringCommandBus)
 
+### How to install
+
+Maven. Add jitpack repo:
+```xml
+<repositories>
+    <repository>
+        <id>jitpack.io</id>
+        <url>https://jitpack.io</url>
+    </repository>
+</repositories>
+```
+
+Add dependency:
+```xml
+<dependency>
+   <groupId>com.github.ummo93</groupId>
+   <artifactId>SpringCommandBus</artifactId>
+   <version>1.0</version> <!-- Or another stable version -->
+</dependency>
+```
+
 #### Example of usage
 ##### Let's implement main command bus
 
