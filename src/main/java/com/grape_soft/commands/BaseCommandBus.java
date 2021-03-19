@@ -16,14 +16,10 @@ import java.util.stream.Stream;
 
 public abstract class BaseCommandBus implements ApplicationListener<ContextRefreshedEvent> {
 
-    ConfigurableApplicationContext ctx;
-    ApplicationArguments appArgs;
-
     @Autowired
-    BaseCommandBus(ConfigurableApplicationContext ctx, ApplicationArguments appArgs) {
-        this.ctx = ctx;
-        this.appArgs = appArgs;
-    }
+    ConfigurableApplicationContext ctx;
+    @Autowired
+    ApplicationArguments appArgs;
 
     private final Map<Class, BaseCommandHandler> cachedCommands = new HashMap<>();
     private final Map<String, Class> cachedCommandsById = new HashMap<>();
